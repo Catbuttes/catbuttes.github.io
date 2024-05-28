@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="css/pico.min.css" />
+    <style>
+        [data-theme=light],
+        :root:not([data-theme=dark]) {
+            article header {
+                background-image: url(img/river.jpg);
+                background-repeat: no-repeat;
+            }
+        }
+
+        @media only screen and (prefers-color-scheme: dark) {
+            :root:not([data-theme]) {
+                article header {
+                    background-image: url(img/gibson.jpg);
+                    background-repeat: no-repeat;
+                }
+            }
+
+            [data-theme=dark] {
+                article header {
+                    background-image: url(img/gibson.jpg);
+                    background-repeat: no-repeat;
+                }
+            }
+    </style>
 </head>
 
 <body>
     <main class="container">
         <article>
-            <header style="background-image:url(img/gibson.jpg); background-repeat: no-repeat;">
+            <header>
                 <img style="border-radius: 50%;" src="img/glitchCat.png" alt="A picture of a black cat looking out of a winder. 
                             It has a glitch effect applied splitting the   
                             red, green and blue channels" />
