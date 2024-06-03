@@ -1,0 +1,4 @@
+Contact: mailto:security@buttes.dev
+Expires: 2034-06-03T11:00:00.000Z
+Preferred-Languages: English
+Canonical: https://buttes.dev/.well-known/security.txt
